@@ -23,9 +23,24 @@
         width: 100vw;
         min-height: 500px;
       }
+
+      .pc {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .mo {
+          display: none;
+        }
+
+        .pc {
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
-    <img src="public/images/1.png" alt="" />
+    <img src="public/images/1.png" alt="" class="pc" />
+    <img src="public/images/1_m.png" alt="" class="mo" />
   </body>
 </html>
